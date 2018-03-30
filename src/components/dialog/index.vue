@@ -94,7 +94,7 @@ $contextColor = #999;
     border-radius: 4px;
     z-index: $Zindex + 2;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 16px;/*no*/
 
     .loli-dialog-title {
       font-weight: 400;
@@ -105,13 +105,13 @@ $contextColor = #999;
     .loli-dialog-context {
       line-height: 1.5;
       padding: 15px 20px;
-      font-size: 14px;
+      font-size: 14px;/*no*/
       color: $contextColor;
     }
 
     .loli-dialog-footer {
       overflow: hidden;
-      border-top: 1px solid #e5e5e5;
+      border-top: 1px solid #e5e5e5;/*no*/
 
       button {
         background-color: #fff;
@@ -120,7 +120,7 @@ $contextColor = #999;
         display: inline-block;
         border-radius: 4px;
         box-sizing: border-box;
-        font-size: 16px;
+        font-size: 16px;/*no*/
         text-align: center;
         box-sizing: border-box;
         outline: none;
@@ -147,7 +147,7 @@ $contextColor = #999;
 
           &.cancel {
             display: inline-block;
-            border-right: 1px solid #e5e5e5;
+            border-right: 1px solid #e5e5e5;/*no*/
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
           }

@@ -67,7 +67,7 @@ $fontColor = #fff;
   z-index: $zIndex;
   width: 80%;
   color: $fontColor;
-  font-size: 14px;
+  font-size: 14px;/*no*/
   text-align: center;
   background-color: $maskColor;
   border-radius: 4px;

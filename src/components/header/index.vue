@@ -26,7 +26,7 @@ $fontColor = #000;
   line-height 46px
   box-sizing border-box
   display flex
-  font-size 14px
+  font-size 14px /*no*/
   position relative
   white-space nowrap
   color $fontColor
