@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     onClick(event) {
-      if(!this.loading && !this.disabled) {
+      if (!this.loading && !this.disabled) {
         this.$emit('click', event);
       }
     }
@@ -55,66 +55,85 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
-  $defaultColor = #fff
-  $primaryColor = #0469c8
-  $warningColor = #e94f4f
-  // 按钮基本样式
-  .loli-button
-    display inline-block
-    text-align center
-    padding 13px 0
-    line-height 28px
-    font-size 18px
-    border-radius 6px
-    box-sizing border-box
-    opacity .9
-    outline none
-    // 默认按钮样式
-    &--default
-      color #000
-      background-color $defaultColor
-      border 1px solid darken($defaultColor, 20%)
-      &:active
-        background darken($defaultColor, 10%)
-        color: darken(#000, 10%)
+$defaultColor = #fff;
+$primaryColor = #0469c8;
+$warningColor = #e94f4f;
 
-    // 主要按钮
-    &--primary
-      color #fff
-      background-color $primaryColor
-      border 1px solid darken($primaryColor, 20%)
-      &:active
-        background darken($primaryColor, 10%)
-        color darken(#fff, 10%)
+// 按钮基本样式
+.loli-button {
+  display: inline-block;
+  text-align: center;
+  padding: 13px 0;
+  line-height: 28px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  opacity: 0.9;
+  outline: none;
 
-    // 警告按钮
-    &--warning
-      color #fff
-      background-color $warningColor
-      border 1px solid darken($warningColor, 20%)
-      &:active
-        background-color darken($warningColor, 10%)
-        color darken(#fff, 10%)
+  // 默认按钮样式
+  &--default {
+    color: #000;
+    background-color: $defaultColor;
+    border: 1px solid darken($defaultColor, 20%); /* no */
 
-    // 禁用样式
-    &--disabled
-      pointer-events none
-      color rgba(255, 255, 255, .6)
-      opacity .4
+    &:active {
+      background: darken($defaultColor, 10%);
+      color: darken(#000, 10%);
+    }
+  }
 
-    // 默认大小
-    &--normal
-      padding 5px 10px
-      font-size 14px
-    // 小按钮
-    &--small
-      padding 0 6px
-      font-size 10px
-    // 大按钮
-    &--large
-      width 100%
+  // 主要按钮
+  &--primary {
+    color: #fff;
+    background-color: $primaryColor;
+    border: 1px solid darken($primaryColor, 20%); /* no */
 
-  // 默认按钮的禁用字体颜色
-  .loli-button--default.loli-button--disabled
-    color #000
+    &:active {
+      background: darken($primaryColor, 10%);
+      color: darken(#fff, 10%);
+    }
+  }
+
+  // 警告按钮
+  &--warning {
+    color: #fff;
+    background-color: $warningColor;
+    border: 1px solid darken($warningColor, 20%); /* no */
+
+    &:active {
+      background-color: darken($warningColor, 10%);
+      color: darken(#fff, 10%);
+    }
+  }
+
+  // 禁用样式
+  &--disabled {
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0.4;
+  }
+
+  // 默认大小
+  &--normal {
+    padding: 5px 10px;
+    font-size: 14px; /* no */
+  }
+
+  // 小按钮
+  &--small {
+    padding: 0 6px;
+    font-size: 10px; /* no */
+  }
+
+  // 大按钮
+  &--large {
+    width: 100%;
+  }
+}
+
+// 默认按钮的禁用字体颜色
+.loli-button--default.loli-button--disabled {
+  color: #000;
+}
 </style>
