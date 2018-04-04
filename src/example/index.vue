@@ -69,6 +69,10 @@ export default {
           {
             text: 'Message - 消息提示框',
             path: 'message'
+          },
+          {
+            text: 'Slider - 滑块',
+            path: 'slider'
           }
         ],
         form: [
@@ -102,8 +106,8 @@ export default {
             path:'input'
           },
           {
-            text:'Actionsheet - 底部弹出框',
-            path:'Actionsheet'
+            text:'TreeSelector - 多级联动',
+            path:'TreeSelector'
           },
           {
             text:'InputNumber - 计数器',
